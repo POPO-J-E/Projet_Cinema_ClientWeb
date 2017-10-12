@@ -1,0 +1,17 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid blue; }
+  .navbar .brand {
+    margin-left: 0; }
+  .navbar .menu {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navbar .menu .menu-item {
+      margin: 0 10px 0 10px; }
+
+/*# sourceMappingURL=navbar.component.css.map */
