@@ -1,0 +1,19 @@
+.slide {
+  display: flex;
+  align-items: center;
+  padding: 30px; }
+  .slide .slide-poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%; }
+  .slide .slide-information {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0 50px; }
+    .slide .slide-information .slide-information-title {
+      margin-bottom: 30px; }
+
+/*# sourceMappingURL=slide.component.css.map */
