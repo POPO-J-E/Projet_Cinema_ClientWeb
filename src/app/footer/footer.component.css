@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .footer .footer-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+
+/*# sourceMappingURL=footer.component.css.map */
