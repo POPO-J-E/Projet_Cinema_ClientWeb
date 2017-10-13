@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+// import { NgModule } from '@angular/core';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -19,11 +18,10 @@ import { SlideComponent } from './slide/slide.component';
     SlideComponent
   ],
   imports: [
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
+    MDBBootstrapModule.forRoot(),
     BrowserModule
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
