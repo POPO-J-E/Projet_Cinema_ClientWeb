@@ -1,12 +1,6 @@
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .footer .footer-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; }
+.page-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 /*# sourceMappingURL=footer.component.css.map */
