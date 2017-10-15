@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-// import { NgModule } from '@angular/core';
 
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,10 +16,8 @@ import { SlideComponent } from './slide/slide.component';
     SlideComponent
   ],
   imports: [
-    MDBBootstrapModule.forRoot(),
     BrowserModule
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })
