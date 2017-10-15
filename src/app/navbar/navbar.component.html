@@ -1,9 +1,54 @@
-<div class="navbar">
-  <div class="brand">LOGO</div>
-  <div class="menu">
-    <div class="menu-item">FILMS</div>
-    <div class="menu-item">ACTORS</div>
-    <div class="menu-search">SEARCH</div>
-    <div class="menu-item">CONNECTION</div>
-  </div>
-</div>
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color">
+
+  <!-- Navbar brand -->
+  <logo><a class="navbar-brand" href="#">CinemaProject</a></logo>
+
+  <!-- Collapsible content -->
+  <links>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-home" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-film" aria-hidden="true"></i> Films<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-users" aria-hidden="true"></i> Actors</a>
+      </li>
+
+      <!--&lt;!&ndash; Dropdown &ndash;&gt;-->
+      <!--<li class="nav-item dropdown" dropdown>-->
+        <!--<a dropdownToggle class="dropdown-toggle nav-link waves-light" mdbRippleRadius>-->
+          <!--Categories-->
+        <!--</a>-->
+
+        <!--&lt;!&ndash;Menu&ndash;&gt;-->
+        <!--<div class="dropdown-menu dropdown-primary">-->
+          <!--<a class="dropdown-item" href="#">Category 1</a>-->
+          <!--<a class="dropdown-item" href="#">Category 2</a>-->
+          <!--<a class="dropdown-item" href="#">Category 3</a>-->
+          <!--<a class="dropdown-item" href="#">Category 4</a>-->
+        <!--</div>-->
+      <!--</li>-->
+
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-search" aria-hidden="true"></i></a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle class="dropdown-toggle nav-link waves-light" mdbRippleRadius>
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </a>
+
+        <!--Menu-->
+        <div class="dropdown-menu dropdown-primary">
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Connection</a>
+        </div>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
