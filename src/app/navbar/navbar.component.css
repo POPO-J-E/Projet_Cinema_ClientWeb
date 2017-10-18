@@ -1,10 +1,13 @@
-.nav-item {
+mdb-navbar /deep/ .navbar {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  z-index: 9; }
+mdb-navbar .nav-item {
   transition: background-color 0.5s ease 0s; }
-  .nav-item:hover {
+  mdb-navbar .nav-item:hover {
     background-color: rgba(255, 255, 255, 0.1); }
-  .nav-item .dropdown-item {
+  mdb-navbar .nav-item .dropdown-item {
     transition: background-color 0.5s ease 0s; }
-    .nav-item .dropdown-item:hover {
+    mdb-navbar .nav-item .dropdown-item:hover {
       color: black !important; }
 
 /*# sourceMappingURL=navbar.component.css.map */

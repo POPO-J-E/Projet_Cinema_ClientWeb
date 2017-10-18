@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-slide',
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.sass']
 })
+
 export class SlideComponent implements OnInit {
 
-  constructor() { }
+  @Input() link: string;
+  @Input() title: string;
+  @Input() synopsis: string;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
