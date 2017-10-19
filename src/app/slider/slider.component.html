@@ -1,4 +1,4 @@
 <mdb-carousel class="carousel slide" [animation]="'slide'">
-    <app-slide [link]="'https://i.jeded.com/i/the-prestige.14577.jpg'" [title]="'The Prestige'" [synopsis]="'After a tragic accident two stage magicians engage in a battle to create the ultimate illusion whilst sacrificing everything they have to outwit the other.'"></app-slide>
-    <app-slide [link]="'https://media.senscritique.com/media/000012353534/source_big/Beetlejuice.jpg'" [title]="'Beetlejuice'" [synopsis]="'When a recently-deceased ghost couple find their now-vacant home invaded by an obnoxious family, they hire a sleazy ghost who gets rid of humans to help them.'"></app-slide>
+    <app-slide *ngFor="let f of films" [link]="'https://i.jeded.com/i/the-prestige.14577.jpg'" [title]="f.titre" [synopsis]="'After a tragic accident two stage magicians engage in a battle to create the ultimate illusion whilst sacrificing everything they have to outwit the other.'">
+    </app-slide>
 </mdb-carousel>
