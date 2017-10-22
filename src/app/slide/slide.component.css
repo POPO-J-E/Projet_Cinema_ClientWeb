@@ -7,6 +7,13 @@ mdb-slide {
     justify-content: center;
     align-items: center; }
     mdb-slide .view img {
-      width: 100%; }
+      width: 100%;
+      filter: blur(5px); }
+  mdb-slide .carousel-caption .poster {
+    width: 25%;
+    border: 6px solid white;
+    border-radius: 5px;
+    margin: 0 50% 20px 50%;
+    transform: translateX(-50%); }
 
 /*# sourceMappingURL=slide.component.css.map */
