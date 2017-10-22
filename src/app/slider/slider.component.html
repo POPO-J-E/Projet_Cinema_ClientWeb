@@ -1,4 +1,9 @@
 <mdb-carousel class="carousel slide" [animation]="'slide'">
-    <app-slide *ngFor="let f of films" [link]="'https://i.jeded.com/i/the-prestige.14577.jpg'" [title]="f.titre" [synopsis]="'After a tragic accident two stage magicians engage in a battle to create the ultimate illusion whilst sacrificing everything they have to outwit the other.'">
+    <app-slide *ngFor="let f of films"
+               [img]="f.img"
+               [title]="f.titre"
+               [date]="f.dateSortie"
+               [duree]="f.duree"
+               [synopsis]="f.synopsis">
     </app-slide>
 </mdb-carousel>

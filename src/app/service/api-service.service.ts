@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import {Http, Response} from '@angular/http';
-import {Film} from '../model/film';
 import {PaginatedResponse} from '../model/paginated-response';
 import {FilmList} from '../model/film-list';
 
