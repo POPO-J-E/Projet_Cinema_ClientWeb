@@ -1,0 +1,9 @@
+<category class="category-container">
+  <div class="category-content {{ !inversed ? '' : ' category-content-inversed'}}">
+    <h1 class="category-title">{{ title }}</h1>
+    <app-poster *ngFor="let f of films"
+                [img]="f.img"
+                [title]="f.titre"
+    ></app-poster>
+  </div>
+</category>
