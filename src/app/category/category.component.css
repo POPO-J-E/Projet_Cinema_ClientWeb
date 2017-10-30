@@ -1,0 +1,10 @@
+.category-content {
+  display: flex;
+  flex-wrap: wrap; }
+  .category-content.category-content-inversed {
+    background-color: gainsboro; }
+  .category-content .category-title {
+    width: 100%;
+    margin: 20px 0 0 10px; }
+
+/*# sourceMappingURL=category.component.css.map */

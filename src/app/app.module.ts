@@ -11,6 +11,8 @@ import { SlideComponent } from './slide/slide.component';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {ApiService} from './service/api-service.service';
+import { CategoryComponent } from './category/category.component';
+import { PosterComponent } from './poster/poster.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {ApiService} from './service/api-service.service';
     NavbarComponent,
     FooterComponent,
     SliderComponent,
-    SlideComponent
+    SlideComponent,
+    CategoryComponent,
+    PosterComponent
   ],
   imports: [
     BrowserModule,
