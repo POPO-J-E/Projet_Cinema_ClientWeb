@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,YAAY;EACV,UAAU,EAAE,GAAG",
+"sources": ["footer.component.sass"],
 "names": [],
 "file": "footer.component.css"
 }

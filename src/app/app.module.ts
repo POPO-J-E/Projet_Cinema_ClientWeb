@@ -13,6 +13,7 @@ import {HttpModule} from '@angular/http';
 import {ApiService} from './service/api-service.service';
 import { CategoryComponent } from './category/category.component';
 import { PosterComponent } from './poster/poster.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,17 @@ import { PosterComponent } from './poster/poster.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    RouterModule.forRoot([
+      {
+        path: 'home',
+        component: SliderComponent
+      },
+      {
+        path: 'films',
+        component: CategoryComponent
+      }
+    ])
   ],
   providers: [ApiService],
   schemas: [ NO_ERRORS_SCHEMA ],

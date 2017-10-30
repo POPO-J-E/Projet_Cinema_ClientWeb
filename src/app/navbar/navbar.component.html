@@ -1,17 +1,17 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color">
   <!-- Navbar brand -->
-  <logo><a class="navbar-brand" href="#">CinemaProject</a></logo>
+  <logo><a class="navbar-brand" routerLink="/home">CinemaProject</a></logo>
 
   <!-- Collapsible content -->
   <links>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-home" aria-hidden="true"></i> Home<span class="sr-only">(current)</span></a>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/home" class="nav-link waves-light" mdbRippleRadius><i class="fa fa-home" aria-hidden="true"></i> Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-film" aria-hidden="true"></i> Films<span class="sr-only">(current)</span></a>
+      <li class="nav-item" routerLinkActive="active">
+        <a routerLink="/films" class="nav-link waves-light" mdbRippleRadius><i class="fa fa-film" aria-hidden="true"></i> Films</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="active">
         <a class="nav-link waves-light" mdbRippleRadius><i class="fa fa-users" aria-hidden="true"></i> Actors</a>
       </li>
 
