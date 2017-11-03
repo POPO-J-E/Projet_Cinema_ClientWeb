@@ -14,6 +14,7 @@ import {ApiService} from './service/api-service.service';
 import { CategoryComponent } from './components/films/category/category.component';
 import { PosterComponent } from './components/common/poster/poster.component';
 import {RouterModule} from '@angular/router';
+import { ActorComponent } from './components/actors/actor/actor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {RouterModule} from '@angular/router';
     SliderComponent,
     SlideComponent,
     CategoryComponent,
-    PosterComponent
+    PosterComponent,
+    ActorComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,10 @@ import {RouterModule} from '@angular/router';
       {
         path: 'films',
         component: CategoryComponent
+      },
+      {
+        path: 'actors',
+        component: ActorComponent
       }
     ])
   ],
