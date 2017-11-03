@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import {Http, Response} from '@angular/http';
 import {PaginatedResponse} from '../model/paginated-response';
-import {FilmList} from '../model/film-list';
+import {FilmList} from '../model/film/film-list';
+import {ActorList} from '../model/actor/actor-list';
 
 @Injectable()
 export class ApiService {
@@ -11,6 +12,12 @@ export class ApiService {
 
   getAllFilms(): Observable<PaginatedResponse<FilmList>> {
     return this.http.get('http://localhost:8181/films')
+        .map((res: Response) => res.json())
+        .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+  }
+
+  getAllActors(): Observable<PaginatedResponse<ActorList>> {
+    return this.http.get('http://localhost:8181/acteurs')
         .map((res: Response) => res.json())
         .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
   }
