@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ApiService} from '../service/api-service.service';
+import {ApiService} from '../../../service/api-service.service';
 
 @Component({
   selector: 'app-category',
