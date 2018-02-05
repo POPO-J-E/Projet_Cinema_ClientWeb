@@ -3,7 +3,7 @@
 
   <!--Card image-->
   <div class="view hm-white-slight waves-light" mdbRippleRadius>
-    <img src="{{ img }}" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+    <img src="{{ object.img }}" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
     <a>
       <div class="mask"></div>
     </a>
@@ -12,10 +12,12 @@
   <!--Card content-->
   <div class="card-body">
     <!--Title-->
-    <h4 class="card-title">{{ title }}</h4>
+    <h4 class="card-title">{{ actor ? (object.prenAct + " " + object.nomAct) : object.titre }}</h4>
     <!--Text-->
     <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
     <a class="btn btn-primary waves-light" mdbRippleRadius>Details</a>
+    <a routerLink="{{ actor ? '/editactor/'+object.noAct : '/editfilm/'+object.noFilm }}" class="btn btn-warning waves-light" mdbRippleRadius><i class="fa fa-pencil" aria-hidden="true"></i></a>
+    <a (click)="actor ? deleteActor(object.noAct) : deleteFilm(object.noFilm)" class="btn btn-danger waves-light" mdbRippleRadius><i class="fa fa-times" aria-hidden="true"></i></a>
   </div>
 
 </div>

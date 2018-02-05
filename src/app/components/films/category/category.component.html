@@ -3,7 +3,16 @@
     <h1 class="category-title">{{ title }}</h1>
     <app-poster *ngFor="let f of films"
                 [img]="f.img"
-                [title]="f.titre"
+                [object]="f"
+                [actor]="false"
     ></app-poster>
+
+    <a routerLink="/addfilm" class="" mdbRippleRadius style="width: 18rem; height: 31rem; margin: 15px;">
+      <div class="card" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+        <div class="view hm-white-slight waves-light" mdbRippleRadius>
+          <i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </a>
   </div>
 </category>

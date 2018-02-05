@@ -1,6 +1,8 @@
 .category-content {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
   .category-content.category-content-inversed {
     background-color: gainsboro; }
   .category-content .category-title {

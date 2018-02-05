@@ -1,4 +1,16 @@
-<app-poster *ngFor="let a of actors"
-            [img]="a.img"
-            [title]="a.nomAct + ' ' + a.prenAct"
-></app-poster>
+<category class="category-container">
+    <div class="category-content">
+        <app-poster *ngFor="let a of actors"
+                [img]="a.img"
+                [object]="a"
+                [actor]="true"
+        ></app-poster>
+        <a routerLink="/addactor" class="" mdbRippleRadius style="width: 18rem; height: 31rem; margin: 15px;">
+            <div class="card" style="display: flex; height: 100%; align-items: center; justify-content: center;">
+                <div class="view hm-white-slight waves-light" mdbRippleRadius>
+                    <i class="fa fa-plus-square-o fa-5x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+</category>
