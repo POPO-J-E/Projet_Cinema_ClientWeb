@@ -15,6 +15,11 @@ import { CategoryComponent } from './components/films/category/category.componen
 import { PosterComponent } from './components/common/poster/poster.component';
 import {RouterModule} from '@angular/router';
 import { ActorComponent } from './components/actors/actor/actor.component';
+import { FilmsformComponent } from './components/films/filmsform/filmsform.component';
+import { FilmeditComponent } from './components/films/filmedit/filmedit.component';
+import { ActoraddComponent } from './components/actors/actoradd/actoradd.component';
+import { ActoreditComponent } from './components/actors/actoredit/actoredit.component';
+import { CharacterComponent } from './components/character/character/character.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { ActorComponent } from './components/actors/actor/actor.component';
     SlideComponent,
     CategoryComponent,
     PosterComponent,
-    ActorComponent
+    ActorComponent,
+    FilmsformComponent,
+    FilmeditComponent,
+    ActoraddComponent,
+    ActoreditComponent,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +58,22 @@ import { ActorComponent } from './components/actors/actor/actor.component';
       {
         path: 'actors',
         component: ActorComponent
+      },
+      {
+        path: 'addactor',
+        component: ActoraddComponent
+      },
+      {
+        path: 'addfilm',
+        component: FilmsformComponent
+      },
+      {
+        path: 'editactor/:id',
+        component: ActoreditComponent
+      },
+      {
+        path: 'editfilm/:id',
+        component: FilmeditComponent
       }
     ])
   ],
